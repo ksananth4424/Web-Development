@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  outline: 0;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 800px){
+  .left {
+  flex-basis: 50%;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgb(42, 27, 38);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(https://pl.tedcdn.com/ted-auth-assets/bg-fellows-001.svg);
+  background-size: cover;
+  background-position: center center;
+  letter-spacing: 0px;
+  line-height: 1.15;
+  height: 100%;
+  color: aliceblue;
+}
+}
+.right {
+  flex-basis: 150%;
+  width: 150%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 60px 30px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+button{
+  display: inline-block;
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0.35);
+}
+
+.bottomlogo{
+  z-index: 5;
+  top: auto;
+  bottom: 10px;
+  height: 54px;
+  width: 96px;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  margin-left: -48px;
+}
+@media(min-width: 30rem){
+.apple{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 17rem;
+  width: auto;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(0, 0, 0) 2.6rem, transparent 2.6rem) rgb(238, 238, 238);
+  box-sizing: border-box;
+  padding: calc(11px - 0.1ex) 10px calc(11px + 0.1ex) calc(2.6rem + 10px);
+  color: rgb(68, 68, 68);
+}
+.apple:hover {
+  background-color: rgba(0,0,0,0.35);
+}
+.applelogo{
+  box-sizing: border-box;
+  fill: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2.6rem;
+}
+
+.google{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 17rem;
+  width: auto;
+  position: relative;
+  background: linear-gradient(to right, rgb(66, 133, 244) 2.6rem, transparent 2.6rem) rgb(238, 238, 238);
+  font-weight: 700;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: calc(11px - 0.1ex) 10px calc(11px + 0.1ex) calc(2.6rem + 10px);
+  color: rgb(68, 68, 68);
+}
+
+.googlelogo{
+  box-sizing: border-box;
+  fill: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2.6rem;
+}
+
+.facebook{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  min-width: 17rem;
+  width: auto;
+  background: linear-gradient(to right, rgb(59, 88, 152) 2.6rem, transparent 2.6rem) rgb(238, 238, 238);
+  font-weight: 700;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: calc(11px - 0.1ex) 10px calc(11px + 0.1ex) calc(2.6rem + 10px);
+  color: rgb(68, 68, 68);
+}
+
+.facebooklogo{
+  box-sizing: border-box;
+  fill: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2.6rem;
+}
+
+.linetext{
+  margin: 3.2rem 0px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 32%;
+  display: block;
+}
+
+.line{
+  background: rgb(221, 221, 221);
+  height: 1px;
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.textor{
+  padding: 0px 1rem;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  background-color: white;
+  line-height: 1.4;
+  color: rgb(187, 187, 187);
+  font-weight: 200;
+  height: 1px;
+  position: relative;
+  box-sizing: border-box;
+  top: -0.1rem;
+}
+.mailbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0rem;
+  margin-top: 2rem;
+}
+
+.form{
+  margin: 0rem 0px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.label{
+  max-width: 20rem;
+  display: block;
+  cursor: default;
+  margin: 1.4rem auto;
+}
+
+.labeltext{
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.6ex;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.input{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  border: 1px solid rgb(221, 221, 221);
+  display: block;
+  padding: 18px;
+  width: 100%;
+  box-shadow: none;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.continue{
+  margin-top: 2.4rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.continuebox{
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.continuetext{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 0px;
+  border-radius: 4px;
+  cursor: default;
+  line-height: 1.3;
+  text-align: center;
+  background: rgb(246, 246, 246);
+  padding: calc(11px - 0.1ex) 28px calc(11px + 0.1ex);
+  color: rgb(153,153,153);
+  font: 700;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 75, 145);
+}
+
+.last_text{
+  white-space: pre-line;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 200;
+  line-height: 1.4;
+  display: block;
+  font-size: 10pt;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 1.4rem 0px;
+}
+}
